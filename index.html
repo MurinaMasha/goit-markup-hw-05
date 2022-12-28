@@ -344,9 +344,7 @@
                     </svg>
                   </a>
                 </li>
-              </ul>
-             
-
+              </ul>         
             </li>
           </ul>
         </div>
@@ -460,6 +458,29 @@
     <!-- ---------------------------------------------MODAL---------------------------------------->
           <div data-modal class="backdrop is-hidden">
             <div class="modal">
+              <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+              <form class="modal-form" name="modal">
+                <div class="modal-group">
+                  <label class="modal-group-field">
+                    <input class="modal-input" type="text" name="user_name" required minlength="2">
+                    <span class="modal-text">Ім'я</span>
+                    <input class="modal-input" type="text" name="user_tel" required minlength="3">
+                    <span class="modal-text">Телефон</span>
+                    <input class="modal-input" type="email" name="user_email" required minlength="3">
+                    <span class="modal-text">Пошта</span>
+                    <textarea class="modal-textarea" name="user_comment" id="user_comment" cols="10" rows="5" placeholder="Введіть текст"></textarea>
+                    <span class="modal-text">Коментар</span>
+                  </label>
+                 
+                </div>
+              </form>
+              <form class="checkbox">
+                <div class="modal-checkbox-field">
+                  <input class="modal-checkbox" type="checkbox" name="user_check" required>
+                    <span class="modal-text">Погоджуюся з розсилкою та приймаю</span> <a class="modal-checkbox-link" href="#">Умови договору</a>
+                </div>
+              </form>
+              <button data-modal-open class="about-btn" type="submit">Відправити</button>
              <button data-modal-close class="modal-btn">
     <div class="modal-img">
       <svg class="modal-img">
